@@ -1,0 +1,52 @@
+body {
+    overflow: hidden;
+}
+
+.invalid-input {
+    border-color: red;
+}
+
+.error-feedback {
+    color: red;
+}
+
+.alert {
+    padding: 20px 40px;
+    min-width: 320px;
+    position: absolute;
+    right: 0px;
+    border-radius: 4px;
+}
+
+.create-alert {
+    background: rgba(136, 255, 172, 0.562);
+    border-left: 8px solid rgba(80, 151, 101, 0.562);;
+}
+
+.update-alert {
+    background: rgba(255, 237, 136, 0.562);
+    border-left: 8px solid rgba(151, 134, 80, 0.562);;
+}
+
+.delete-alert {
+    background: rgba(255, 136, 136, 0.562);
+    border-left: 8px solid rgba(151, 80, 80, 0.562);;
+}
+
+.actualize-alert {
+    background: rgba(136, 174, 255, 0.562);
+    border-left: 8px solid rgba(80, 108, 151, 0.562);;
+}
+
+.alert.show {
+    animation: show_slide 1s ease forwards;
+}
+@keyframes show_slide {
+    0%{
+        transform: translateX(100%);
+    }
+}
+
+.alert.hide {
+    display: none;
+}
